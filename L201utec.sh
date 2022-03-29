@@ -1,5 +1,13 @@
 #!/bin/sh
 
+# Define the user name
+if [ -z "$USER" ]; then
+  echo "Empty user!"
+  USER="alex"
+else
+  echo "Variable define"
+fi
+
 # Erase all the files
 rm -r /home/$USER/lab_ws
 echo "Hola Utec"
