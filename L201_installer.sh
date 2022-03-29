@@ -9,7 +9,7 @@ sudo cp /home/$USER/L201_setup/L201utec.service /etc/systemd/system/
 sync
 rm -r /home/$USER/L201_setup
 echo "Almost Finish!"
-sudo chmod u+x ./usr/local/sbin/L201utec.sh
+sudo chmod u+x /usr/local/sbin/L201utec.sh
 sync
 sudo systemctl enable L201utec.service
 
