@@ -30,14 +30,14 @@ rm -r /home/$USER/Public/*
 
 # Delete the files in home
 home_dir=/home/$USER
-#for entry in "$home_dir"/*
-#do
-#  if [ "$entry" = "${home_dir}/Desktop" ] || [ "$entry" = "${home_dir}/Documents" ] || [ "$entry" = "${home_dir}/Downloads" ] || [ "$entry" = "${home_dir}/Music" ] || [ "$entry" = "${home_dir}/Pictures" ] || [ "$entry" = "${home_dir}/Public" ] || [ "$entry" = "${home_dir}/Templates" ] || [ "$entry" = "${home_dir}/Videos" ] || [ "$entry" = "${home_dir}/Examples" ]; then
-#    echo "Keep file $entry"
-#  else
-#    echo "Detele file $entry"
-#    rm -r "$entry"
-#  fi 
-#done
+for entry in "$home_dir"/*
+do
+  if [ "$entry" = "${home_dir}/Desktop" ] || [ "$entry" = "${home_dir}/Documents" ] || [ "$entry" = "${home_dir}/Downloads" ] || [ "$entry" = "${home_dir}/Music" ] || [ "$entry" = "${home_dir}/Pictures" ] || [ "$entry" = "${home_dir}/Public" ] || [ "$entry" = "${home_dir}/Templates" ] || [ "$entry" = "${home_dir}/Videos" ] || [ "$entry" = "${home_dir}/Examples" ] || [ "$entry" = "${home_dir}/lab_ws" ]; then
+    echo "Keep file $entry"
+  else
+    echo "Detele file $entry"
+    rm -r "$entry"
+  fi 
+done
 
 # Finish deleting all the files
