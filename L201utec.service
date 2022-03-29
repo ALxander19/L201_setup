@@ -1,0 +1,8 @@
+[Unit]
+Description=Algo
+
+[Service]
+ExecStart=/usr/local/sbin/L201utec.sh
+
+[Install]
+WantedBy=multi-user.target
