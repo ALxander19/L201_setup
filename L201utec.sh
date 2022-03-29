@@ -17,6 +17,7 @@ unzip /home/$USER/lab_ws.zip -d /home/$USER
 rm -r /lab_ws
 rm /home/$USER/lab_ws.zip
 sudo chmod 777 /home/$USER/lab_ws
+sudo chmod 777 /home/$USER/lab_ws/*
 
 # Delete the files from Pictures, Documents, Downloads
 rm -r /home/$USER/Pictures/*
