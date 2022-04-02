@@ -10,4 +10,4 @@ sudo apt-get install ros-kinetic-effort-controllers ros-kinetic-joy ros-kinetic-
   ros-kinetic-move-base ros-kinetic-urdf ros-kinetic-xacro \
   ros-kinetic-compressed-image-transport ros-kinetic-rqt* \
   ros-kinetic-gmapping ros-kinetic-navigation ros-kinetic-interactive-markers \
-  ros-kinetic-joint-state* 
+  ros-kinetic-joint-state* ros-kinetic-gazebo-ros-*
